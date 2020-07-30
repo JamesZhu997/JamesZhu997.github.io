@@ -100,16 +100,22 @@
 </li>
 </ul>
 <h3 id="推送至远端（Github）"><a href="#推送至远端（Github）" class="headerlink" title="推送至远端（Github）"></a>推送至远端（Github）</h3><ul>
+<li><p>创建一个github仓库</p>
+</li>
 <li><p>安装模块<br>cnpm install –save hexo-deployer-git</p>
 </li>
-<li><p>配置_config.yml文档：<br> Deployment<br> Docs: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">https://hexo.io/docs/deployment.html</a><br>deploy:<br>type: git<br>repo: <a target="_blank" rel="noopener" href="https://github.com/JamesZhu997/JamesZhu997.github.io.git%EF%BC%88%E5%9C%B0%E5%9D%80%E4%B8%BAGithub%E4%B8%8A%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%E5%90%8E%E7%9A%84%E5%9C%B0%E5%9D%80%EF%BC%89">https://github.com/JamesZhu997/JamesZhu997.github.io.git（地址为Github上新建仓库后的地址）</a><br>branch: master<br><img src="1-CreateBlog/config.JPG" alt="test"></p>
-<img src="1-CreateBlog/config.JPG"></li>
-<li><p>开始向远端推送：<br>hexo d<br>可能会报错：Unable to auto-detect email address……<br>解决方法如下:<br>输入git config –global user.name”Your Name”</p>
+<li><p>配置_config.yml文档：<br> Deployment<br> Docs: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">https://hexo.io/docs/deployment.html</a><br>deploy:<br>type: git<br>repo: <a target="_blank" rel="noopener" href="https://github.com/JamesZhu997/JamesZhu997.github.io.git%EF%BC%88%E5%9C%B0%E5%9D%80%E4%B8%BAGithub%E4%B8%8A%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%E5%90%8E%E7%9A%84%E5%9C%B0%E5%9D%80%EF%BC%89">https://github.com/JamesZhu997/JamesZhu997.github.io.git（地址为Github上新建仓库后的地址）</a><br>branch: master  </p>
+</li>
+<li><p>开始向远端推送：<br>hexo d</p>
+<h3 id="错误收集"><a href="#错误收集" class="headerlink" title="错误收集"></a>错误收集</h3></li>
+<li><p>1<br>ERROR Deployer not found: git<br>解决方法如下：<br>cnmp install hexo-deployer-git –save</p>
+</li>
+<li><p>2<br>hexo d<br>ERROR:Unable to auto-detect email address……<br>解决方法如下:<br>输入git config –global user.name”Your Name”</p>
 <pre><code>git config --global user.email&quot;Your email&quot;</code></pre>
 <p>重新hexo d</p>
 </li>
 </ul>
-<p>成功后访问<a target="_blank" rel="noopener" href="https://jameszhu997.github.io.git/">https://JamesZhu997.github.io.git</a></p>
+<p>成功后访问<a target="_blank" rel="noopener" href="https://jameszhu997.github.io/">https://JamesZhu997.github.io</a></p>
 
       
     </div>
